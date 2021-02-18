@@ -38,11 +38,11 @@ cd DGL-tutorial
 ```
 
 ### docker setting  
-도커 이미지를 다운 받습니다.  
-콘다 환경에서의 셋팅은 [다음](https://docs.dgl.ai/en/0.4.x/install/)을 참고해 주세요.  
+docker를 사용해 실습 환경을 셋팅합니다.
+로컬 환경에서의 셋팅은 [여기](https://docs.dgl.ai/en/0.4.x/install/)를 참고해 주세요.  
 
 
-**1. 도커 이미지 다운로드**
+**1. 도커 이미지 가져오기**
 ```
 docker pull nilsine11202/dgl-tutorial:1.0
 ```
@@ -98,3 +98,4 @@ docker 컨테이너의 배시에서 위의 커맨드를 실행하면, 주피터 
 * large graph example 추가하기
 * custom graph dataset 만들기
 * graph visualization
+* local 환경 셋팅
