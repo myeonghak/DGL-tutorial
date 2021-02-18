@@ -47,10 +47,14 @@ cd DGL-tutorial
 docker pull nilsine11202/dgl-tutorial:1.0
 ```
 <center><img src="/asset/docker_pull.png" align="center" alt="drawing" width="400"/></center>    
-image pull이 잘 이루어 졌다면, 아래와 같은 내용을 확인해 볼 수 있습니다.  
+image pull이 잘 이루어 졌다면, 아래와 같은 내용을 확인해 볼 수 있습니다.   
+
+
 ```
 docker images
-```
+```  
+
+
 <center><img src="/asset/docker_images.png" align="center" alt="drawing" width="600"/></center>    
 
 
