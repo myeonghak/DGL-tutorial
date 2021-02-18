@@ -4,8 +4,8 @@ import torch
 import torch.nn.functional as F
 
 def load_zachery():
-    nodes_data = pd.read_csv('data/nodes.csv')
-    edges_data = pd.read_csv('data/edges.csv')
+    nodes_data = pd.read_csv('../data/nodes.csv')
+    edges_data = pd.read_csv('../data/edges.csv')
     src = edges_data['Src'].to_numpy()
     dst = edges_data['Dst'].to_numpy()
     g = dgl.graph((src, dst))
