@@ -69,6 +69,10 @@ docker images
 
 ```
 docker run --runtime nvidia -it --name dgl_tuto -p 8885:8885 -v /home:/workspace -d nilsine11202/dgl-tutorial:1.0 /bin/bash
+
+# docker run --runtime nvidia -it --name dgl_tuto --shm-size 128G -p 8885:8885 -v /home:/workspace -d nilsine11202/dgl-tutorial:1.0 /bin/bash
+# (large-graph 예제 실행시 Bus error (core dumped) model share memory 에러가 발생할 경우, 위처럼 --shm-size 인자로 도커 컨테이너의 shared memory를 늘림으로써 해결할 수 있습니다)
+
 ```
 `dgl_tuto`: 컨테이너의 이름으로 사용한 임의의 명칭입니다. 원하시는 이름으로 바꾸어 사용하세요.  
 `8885:8885`: jupyter lab 포팅을 위한 포트를 지정해 줍니다. 원하는 포트로 바꾸어 사용할 수 있습니다. 로컬호스트가 사용하지 않을 법한 포트명을 임의로 지정해 주었습니다.  
@@ -96,7 +100,7 @@ docker 컨테이너의 배시에서 위의 커맨드를 실행하면, 주피터 
 
 ## TO DO  
 
-* large graph example 추가하기
 * custom graph dataset 만들기
 * graph visualization
 * local 환경 셋팅
+* 추천 시스템 예제 적용
